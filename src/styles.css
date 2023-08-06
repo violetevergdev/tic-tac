@@ -1,0 +1,62 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #6183ceb7;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: 25% 0;
+  align-items: center;
+}
+.square {
+  background: #fff;
+  border: 2px dashed #aec45d;
+  float: left;
+
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 70px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 70px;
+  color: #ad77b6;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+.btn {
+  padding: 15px 30px;
+  border: 1px solid #a2b657;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: #aec45d;
+  margin-top: 15px;
+  font-size: 20px;
+}
